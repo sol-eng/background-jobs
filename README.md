@@ -21,8 +21,11 @@ Similar to Shiny applications, plumber APIs can be run as a background job. This
 ### Extract, Transform, Load (ETL) :house: :rocket:
 Background jobs are ideal for long running processes, like loading data from an external database or API.
 
+### [Simulations](simulation-job) :house: :rocket:
+Long running tasks like simulation studies are ideal use cases for background jobs.
+
 ### Model Fitting :house: :rocket:
-Long running tasks like model training are ideal use cases for background jobs.
+Model training, which can often take a long time, is another ideal use cases for background jobs.
 
 ### Multiple Models :house: :rocket:
 Fitting multiple models in parallel can be accomplished programatically using backgound jobs. 
