@@ -17,3 +17,5 @@ scripts from attempting to write to the same file.
 Since the job periodically saves results, you can interactively load and work
 with those results in the original R session. [`pi-results.R`](pi-results.R)
 provides an example of this pattern.
+
+![](../images/simulation-job.gif)
