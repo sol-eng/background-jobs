@@ -1,7 +1,7 @@
 # Shiny apps in background jobs
 Shiny apps can be run in local background jobs. This promotes a workflow of
 running the app in the background, making changes to the source code in the
-original R session, and reloading the app to see the updated changes.
+original R session, and checking the app to see the updated changes.
 
 ## Starting the app
 Shiny applications start with a call to `shiny::runApp()`. In order to run an
@@ -21,7 +21,9 @@ in the RStudio Viewer pane.
 
 ## Editing the app
 Once the application is opened in the Viewer pane, you can make changes to the
-application source code in the interactive R session and then refresh the app to
-see the changes.
+application source code in the interactive R session and the app will
+automatically refresh with the changes. This is happens by setting the
+`shiny.autoreload` option to `TRUE`, which is done in
+[`shiny-run.R`](shiny-run.R).
 
 ![](../images/shiny-update.gif)
