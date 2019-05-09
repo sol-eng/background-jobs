@@ -3,7 +3,7 @@ library(rtweet)
 
 search_term <- "#rstats"
 output_file <- "output/tweets.rds"
-total_tweets <- 70
+total_tweets <- 30000
 # Collect initial tweets ----
 # Search for 50 tweets with the #rstats hashtag
 initial_tweets <- search_tweets(search_term, n = 50, include_rts = FALSE)
