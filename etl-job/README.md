@@ -19,3 +19,5 @@ tweets, saves the results, and then collects more tweets. This way, instead of
 waiting for all data to be collected, a user can send `etl.R` to a background
 job, then use the preliminary results to start designing an analysis while the
 remaining results are being collected.
+
+![](etl.gif)
