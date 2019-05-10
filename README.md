@@ -26,28 +26,28 @@ local or remote jobs. For the resources collected here, :house: indicates
 examples for local Jobs while :rocket: indicates jobs suited for the Launcher.
 
 ---
-#### Local Job Environments :house:
-Simple script that can be used to demonstrate local job environment options.
+### Local Job Environments :house:
+Simple scripts that can be used to demonstrate local job environment options.
 
-#### [Shiny App](shiny-job) :house:
+### [Shiny App](shiny-job) :house:
 Running a [Shiny](http://shiny.rstudio.com) application as a background job
 allows the current R session to remain free to work on other things. This can be
 especially helpful for making changes to the Shiny code and refreshing the app
 to see the changes in real time.
 
-#### [Plumber API](plumber-job) :house:
+### [Plumber API](plumber-job) :house:
 Similar to Shiny applications, [plumber](https://www.rplumber.io) APIs can be
 run as a background job. This allows the current R session to remain open for
 things like testing or interacting with the API.
 
-#### [Extract, Transform, Load (ETL)](etl-job) :house: :rocket:
+### [Extract, Transform, Load (ETL)](etl-job) :house: :rocket:
 Background jobs are ideal for long running processes, like loading data from an
 external database or API.
 
-#### [Simulations](simulation-job) :house: :rocket:
+### [Simulations](simulation-job) :house: :rocket:
 Long running tasks like simulation studies can be run as background jobs in
 order to keep the original R session open for other work.
 
-#### Model Training :house: :rocket:
+### Model Training :house: :rocket:
 Model training, which can often take a long time, is another great use case for
 background jobs. Launcher jobs can be used to train multiple models in parallel.
