@@ -26,7 +26,7 @@ local or remote jobs. For the resources collected here, :house: indicates
 examples for local Jobs while :rocket: indicates jobs suited for the Launcher.
 
 ---
-### Local Job Environments :house:
+### [Local Job Environments](simple-job) :house:
 Simple scripts that can be used to demonstrate local job environment options.
 
 ### [Shiny App](shiny-job) :house:
