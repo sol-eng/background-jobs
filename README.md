@@ -48,6 +48,6 @@ external database or API.
 Long running tasks like simulation studies can be run as background jobs in
 order to keep the original R session open for other work.
 
-### Model Training :house: :rocket:
+### [Model Training](ml-job) :house: :rocket:
 Model training, which can often take a long time, is another great use case for
 background jobs. Launcher jobs can be used to train multiple models in parallel.
