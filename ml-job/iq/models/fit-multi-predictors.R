@@ -1,4 +1,4 @@
-# Fit a Stan model with a single predictor
+# Fit a Stan model with multiple predictors
 
 # Setup ----
 library(rstan)
@@ -8,9 +8,9 @@ iq_env <- new.env()
 source("iq-data.R", local = iq_env)
 
 # Train ----
-# Single predictor ----
-# Fit simple model with single predictor - mother high school
-fit <- stan("models/kidscore_momhs.stan", data = iq_env)
+# Multiple predictors ----
+# Fit model with multiple predictors
+fit <- stan("stan/kidiq_multi_preds.stan", data = iq_env)
 
 # Save ----
 fit@stanmodel@dso <- new("cxxdso")

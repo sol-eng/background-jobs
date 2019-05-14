@@ -10,7 +10,7 @@ source("iq-data.R", local = iq_env)
 # Train ----
 # Multiple predictors with interaction ----
 # Fit model with multiple predictors and interaction
-fit <- stan("models/kidiq_interaction.stan", data = iq_env)
+fit <- stan("stan/kidiq_interaction.stan", data = iq_env)
 
 # Save ----
 fit@stanmodel@dso <- new("cxxdso")
