@@ -14,4 +14,5 @@ fit <- stan("stan/kidiq_interaction.stan", data = iq_env)
 
 # Save ----
 fit@stanmodel@dso <- new("cxxdso")
+if (!dir.exists("fitted-models")) dir.create("fitted-models")
 saveRDS(fit, file = "fitted-models/interactions-fit.rds")
