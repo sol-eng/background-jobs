@@ -1,13 +1,17 @@
 # Read data from Twitter API
 library(rtweet)
 
+token <- readRDS("twitter-token.rds")
+
 search_term <- "#rstats"
 output_file <- "output/tweets.rds"
 total_tweets <- 30000
+
+
 # Collect initial tweets ----
 message("Collecting initial 50 tweets")
 # Search for 50 tweets with the #rstats hashtag
-initial_tweets <- search_tweets(search_term, n = 50, include_rts = FALSE)
+initial_tweets <- search_tweets(search_term, n = 50, include_rts = FALSE, token = token)
 
 # Save initial tweets ----
 message("Saving initial tweets")
@@ -20,7 +24,8 @@ max_id <- initial_tweets$status_id[which.min(initial_tweets$created_at)]
 more_tweets <- search_tweets(search_term, 
                              n = total_tweets - nrow(initial_tweets), 
                              max_id = max_id, 
-                             retryonratelimit = TRUE)
+                             retryonratelimit = TRUE,
+                             token = token)
 
 # Combine all tweets ----
 message("Combining all tweets")
