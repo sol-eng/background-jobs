@@ -1,5 +1,7 @@
 # RStudio 1.2 Background Jobs
 
+<img src="images/source-dropdown.png" align="right" />
+
 [RStudio 1.2](https://www.rstudio.com/products/rstudio/) introduced the ability
 to send long running R scripts to [local and remote background
 jobs](https://blog.rstudio.com/2019/03/14/rstudio-1-2-jobs/). This functionality
@@ -12,6 +14,8 @@ by the [RStudio Job Launcher](https://docs.rstudio.com/job-launcher/), which
 also supports running interactive R sessions on remote resource managers like
 [Kubernetes](https://kubernetes.io). The following helps illustrate general use
 cases for these new features:
+
+---
 
 ![](images/use-case-grid.png)
 
