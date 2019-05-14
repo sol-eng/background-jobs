@@ -12,8 +12,7 @@ server and desktop. Remote background jobs are a feature of [RStudio Server
 Pro](https://www.rstudio.com/products/rstudio-server-pro/) and are orchestrated
 by the [RStudio Job Launcher](https://docs.rstudio.com/job-launcher/), which
 also supports running interactive R sessions on remote resource managers like
-[Kubernetes](https://kubernetes.io). The following helps illustrate general use
-cases for these new features:
+[Kubernetes](https://kubernetes.io).
 
 ---
 
