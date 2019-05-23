@@ -18,4 +18,6 @@ Since the job periodically saves results, you can interactively load and work
 with those results in the original R session. [`pi-results.R`](pi-results.R)
 provides an example of this pattern.
 
-![](../images/simulation-job.gif)
+![](../images/simulation-local.gif)
+
+![](../images/simulation-launcher.gif)
