@@ -9,6 +9,7 @@ library(dplyr)
 ames <- AmesHousing::make_ames()
 
 # Build recipe ----
+message("Building recipe")
 rec <- 
   recipe(Sale_Price ~ Neighborhood + House_Style + Year_Sold + Lot_Area, 
          data = ames) %>%
@@ -27,11 +28,13 @@ rec <-
 rec_train <- prep(rec, training = ames)
 
 # Bootstrap sampling ----
+message("Bootstrap sampling")
 set.seed(35487)
 bt_samples <- bootstraps(ames) %>% 
   mutate(recipes = map(splits, prepper, recipe = rec))
 
 # Model definition ----
+message("Defining model")
 rf <- rand_forest(mode = "regression",
                   mtry = 10,
                   trees = 25,
@@ -39,12 +42,14 @@ rf <- rand_forest(mode = "regression",
   set_engine("randomForest")
 
 # Model training ----
+message("Training models")
 bt_samples <- bt_samples %>% 
   mutate(models = map(recipes, function(rec){
     fit(rf, Sale_Price ~ ., data = juice(rec))
   }))
 
 # Model Evaluation ----
+message("Evaluating models")
 bt_samples <- bt_samples %>% 
   mutate(pred = pmap(lst(split = splits, model = models, recipe = recipes), function(split, model, recipe){
     mod_data <- bake(recipe, new_data = assessment(split), all_predictors(), all_outcomes())
