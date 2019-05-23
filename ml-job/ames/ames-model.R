@@ -6,6 +6,7 @@ library(purrr)
 library(dplyr)
 
 # Make data ----
+message("Making data")
 ames <- AmesHousing::make_ames()
 
 # Build recipe ----
