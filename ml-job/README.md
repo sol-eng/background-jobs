@@ -24,7 +24,7 @@ distributed so they each have their own independent compute resources. This
 workflow can be enhanced by using the Launcher specific funcitons found in the
 [`rstudioapi` package](https://github.com/rstudio/rstudioapi).
 
-## Models
+## Examples
 
 ### [Ames](ames)
 Example random forest models built using data from the
