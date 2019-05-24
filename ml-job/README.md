@@ -1,12 +1,10 @@
 # Model training with background jobs
 
-R is often used in connection with other tools like
-[TensorFlow](https://www.tensorflow.org) and [Stan](https://mc-stan.org) to
-build and train machine learning models. Often, this training process can take a
-long time, sometimes several hours. In order to remain productive, it's possible
-to push model training to the background (either with local jobs or Launcher
-jobs) and continue working in the original R session. This example highlights
-that workflow with a variety of models and frameworks.
+R is often used to build and train machine learning models. Often, this training
+process can take a long time, sometimes several hours. In order to remain
+productive, it's possible to push model training to the background (either with
+local jobs or Launcher jobs) and continue working in the original R session.
+This example highlights that workflow.
 
 ## Local Background Jobs
 When working locally, moving a single job into the background keeps the original
@@ -33,14 +31,3 @@ package. The models are built using tools from the
 [`tidymodels`](https://github.com/tidymodels) collection of packages and follows
 the template outlined
 [here](https://tidymodels.github.io/rsample/articles/Applications/Recipes_and_rsample.html).
-
-### [Rats](rats)
-Example model from the [RStan Getting Started
-page](https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started). More
-specific details about the data and the model can be found
-[here](http://www.openbugs.net/Examples/Rats.html).
-
-### [Kid IQ](iq)
-Example models from the [Stan examples
-repository](https://github.com/stan-dev/example-models/wiki/ARM-Models-Sorted-by-Name#kid-iq).
-These models attempt to predict a child's IQ given a variety of predictors.
