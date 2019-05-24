@@ -53,5 +53,5 @@ jobs in order to keep the original R session open for other work.
 
 ### [Model Training](ml-job) :house: :rocket:
 Model training, which can often take a long time, is another great use case for
-background and Launcher jobs. Launcher jobs can be used to train multiple models
-in parallel.
+background and Launcher jobs. Local jobs are ideal for sequential model training
+while Launcher jobs can be used to train multiple models in parallel.
