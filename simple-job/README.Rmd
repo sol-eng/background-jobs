@@ -33,7 +33,7 @@ The [`setup.R`](setup.R) script sets up a global environment with 3 variables:
 ```{r environment setup}
 ```
 
-With this setup, [`simple.R`](simple.R) can be run as a background job, with
+With this setup, [`simple.R`](simple.R) can be run as a background job with
 various environment options enabled in order to understand how each option
 impacts the background job and the global environment.
 
