@@ -14,7 +14,8 @@ launcher_script <- function(script_path,
                                 args = c("--slave", "--no-save", "--no-restore"), 
                                 stdin = glue::glue("source('{script_path}')"), 
                                 container = rstudioapi::launcherContainer(image),
-                                workingDirectory = dirname(script_path))
+                                workingDirectory = dirname(script_path),
+                                tags = c("programmatic-job"))
 }
 
 # Start concurrent Launcher jobs
