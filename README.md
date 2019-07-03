@@ -55,3 +55,8 @@ jobs in order to keep the original R session open for other work.
 Model training, which can often take a long time, is another great use case for
 background and Launcher jobs. Local jobs are ideal for sequential model training
 while Launcher jobs can be used to train multiple models in parallel.
+
+### [Programmatic Jobs](programmatic-job) :house: :rocket:
+Simple examples showcasing how to use the [`rstudioapi`
+package](https://github.com/rstudio/rstudioapi) to programmatically orchestrate
+local and Launcher background jobs.
