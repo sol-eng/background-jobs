@@ -20,7 +20,7 @@ launcher_script <- function(script_path,
 
 # Start concurrent Launcher jobs
 n <- 3
-jobs <- replicate(n, launcher_script(here::here("programmatic-job", "estimate-pi.R")))
+jobs <- purrr::map_chr(1:n, ~launcher_script(here::here("programmatic-job", "estimate-pi.R"), name = glue::glue("scripted_job_{.}")))
 
 # Stop launcher jobs
 cancel_jobs <- purrr::map(jobs, rstudioapi::launcherControlJob, "kill")
