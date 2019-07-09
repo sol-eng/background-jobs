@@ -3,7 +3,7 @@
 <img src="images/source-dropdown.png" align="right" />
 
 [RStudio 1.2](https://www.rstudio.com/products/rstudio/) introduced the ability
-to send long running R scripts to [local and remote background
+to send long-running R scripts to [local and remote background
 jobs](https://blog.rstudio.com/2019/03/14/rstudio-1-2-jobs/). This functionality
 can dramatically improve the productivity of data scientists and analysts using
 R since they can continue working in an unblocked R session in RStudio while
