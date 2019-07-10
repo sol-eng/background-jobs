@@ -22,7 +22,7 @@ interactive R sessions on remote resource managers like
 Background jobs can be started manually or programatically. As mentioned in the
 [RStudio blog post](https://blog.rstudio.com/2019/03/14/rstudio-1-2-jobs/),
 local background jobs are ideal for interactive, ad-hoc usage. The
-[`callr`](https://blog.rstudio.com/2019/03/14/rstudio-1-2-jobs/) package
+[`callr`](https://callr.r-lib.org/) package
 provides a mechanism for programatically orchestrating background R processes.
 This repository is a collection of resources used to demonstrate various use
 cases for local and remote background jobs. In many cases, scripts can be run as
