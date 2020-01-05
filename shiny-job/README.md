@@ -16,7 +16,7 @@ For Shiny applications, all of the default job options work well.
 
 ## Viewing the app
 Once the job is started, the Jobs pane will show the URL that can be used to
-access the application. On buth RStudio desktop and RStudio Server, you can use
+access the application. On both RStudio desktop and RStudio Server, you can use
 `rstudioapi::viewer()` with the URL of the application to open the application
 in the RStudio Viewer pane. 
 
